@@ -802,9 +802,6 @@ ${data.usageInformation}
 ## Contribution Guidelines
 ${data.contributionGuidelines}
 
-## Test Instructions
-${data.testInstructions}
-
 ## Questions
 To get in contact with me please see my Github [here](https.github.com/${data.github}), or [email me](mailto:${data.email})!
 
