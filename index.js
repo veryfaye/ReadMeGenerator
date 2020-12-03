@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("util");
+const generateMarkdown = require("./generateMarkdown");
+
 
 // array of questions for user
 const questions = [
@@ -33,7 +34,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Select the license of the readme file.",
-    choices: ["MIT", "Other"],
+    choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
   },
   {
     type: "input",
@@ -45,46 +46,31 @@ const questions = [
     name: "emailAddress",
     message: "Enter your email address.",
   },
+  {
+    type: "input",
+    name: "fullName",
+    message: "Enter your full name.",
+  },
+  {
+    type: "input",
+    name: "year",
+    message: "Enter the current year.",
+  },
 ];
 
-// readme file data
-const readmeData = (answers) => {
-  `# ${answers.title}
-${answers.description}
-
-## Installation Instructions
-${answers.installationInstructions}
-
-## Usage Information
-${answers.usageInformation}
-
-## Contribution Guidelines
-${answers.contributionGuidelines}
-
-## Test Instructions
-${answers.testInstructions}
-
-## License
-${answers.license}
-
-## Help
-Github [link](https.github.com/${answers.github}), and [email](mailto:${answers.email}) link go here`;
-};
-
 // function to write README file
-function writeToFile(fileName, data) {}
-
-// function to initialize program
-function init() {}
-
-// function call to initialize program
-//init();
-
-//----------------------ADDED BY AL TO TEST THE FUNCTIONALITY. CHANGE BACK TO THE FUNCTIONS ABOVE FOR FINAL VERSION----------------------
-inquirer.prompt(questions).then((response) => {
-//   let fileData = readmeData(response);
-//   console.log(fileData)
-  fs.writeFileAsync("exampleREADME.md", readmeData(response), (err) =>
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log("Saved")
   );
-});
+}
+
+// function to initialize program
+function init() {
+  inquirer.prompt(questions).then((response) => {
+    writeToFile("exampleREADME.md", response);
+  });
+}
+
+// function call to initialize program
+init();
