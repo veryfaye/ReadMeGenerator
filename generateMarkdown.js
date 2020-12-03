@@ -761,16 +761,16 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 //Set up License information
 if (data.license == "MIT") {
 licenseInformation = licenseArray[0];
-badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg";
+badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)";
 } else if (data.license == "Apache 2.0") {
 licenseInformation = licenseArray[1];
-badge = "![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg";
+badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 } else if (data.license == "GPL 3.0") {
 licenseInformation = licenseArray[2];
-badge = "![License: GPL 3.0](https://img.shields.io/badge/License-GPLv3-yellow.svg";
+badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
 } else if (data.license == "BSD 3") {
 licenseInformation = licenseArray[3];
-badge = "![License: BSD 3](https://img.shields.io/badge/License-BSD%203-yellow.svg";
+badge = "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
 } else if (data.license == "None") {
 licenseInformation = "";
 }
@@ -780,10 +780,10 @@ return `# ${data.title}
 ${badge}
 
 ##Table of Contents
-* [Installation Instructions](#installation instructions)
-* [Usage Information](#usage information)
-* [Contributing Guidelines](#contributing guidelines)
-* [Test Instructions](#test instructions)
+* [Installation Instructions](#installation-instructions)
+* [Usage Information](#usage-information)
+* [Contributing Guidelines](#contributing-guidelines)
+* [Test Instructions](#test-instructions)
 * [Help](#help)
 * [License](#license)
 
