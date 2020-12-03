@@ -784,7 +784,7 @@ ${badge}
 * [Usage Information](#usage-information)
 * [Contributing Guidelines](#contributing-guidelines)
 * [Test Instructions](#test-instructions)
-* [Help](#help)
+* [Questions](#questions)
 * [License](#license)
 
 
@@ -805,7 +805,7 @@ ${data.contributionGuidelines}
 ## Test Instructions
 ${data.testInstructions}
 
-## Help
+## Questions
 To get in contact with me please see my Github [here](https.github.com/${data.github}), or [email me](mailto:${data.email})!
 
 ## License
