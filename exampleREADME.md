@@ -1,4 +1,4 @@
-# TITLE GOES HERE
+# EatDaBurger
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ##Table of Contents
@@ -10,25 +10,25 @@
 * [License](#license)
 
 
-THIS IS A DESCRIPTION OF THE APPLICATION
+A burger logger created with 
 
 ## Installation Instructions
 Use the following commands to install this application.
 ```
-npm i
+N/A
 ```
 
 ## Usage Information
-HERE IS HOW TO USE THE APPLICATION
+N/A
 
 ## Contribution Guidelines
-HERE IS HOW TO CONTRIBUTE TO THE APPLICATION
+N/A
 
 ## Questions
 To get in contact with me please see my Github [here](https.github.com/undefined), or [email me](mailto:undefined)!
 
 ## License
-Copyright 2020 Amanda LeMoine
+Copyright 2021 Amanda LeMoine
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
